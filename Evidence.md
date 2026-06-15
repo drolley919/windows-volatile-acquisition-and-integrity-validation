@@ -11,7 +11,7 @@ The collected evidence included:
 
 This approach ensured preservation of volatile and semi-volatile evidence required for later forensic analysis.
 
-![Collected volatile evidence artifacts](Assets/screenshots/lab1-memory-acquisition-artifacts-collected.png)
+![Collected volatile evidence artifacts](Assets/screenshots/memory-acquisition-artifacts-collected.png)
 
 ## Evidence Integrity Validation
 
