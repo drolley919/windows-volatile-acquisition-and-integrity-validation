@@ -1,100 +1,47 @@
-# windows-volatile-acquisition-and-integrity-validation
-
 Windows Volatile Acquisition and Integrity Validation
 
 Overview
 
-This digital forensics project demonstrates the acquisition, preservation, and integrity validation of volatile Windows artifacts commonly collected during live-response investigations.
+This repository documents a live-response forensic investigation focused on acquiring and validating volatile Windows artifacts. The examination involved collecting a memory image, preserving critical Windows registry hives, and verifying evidence integrity through cryptographic hashing.
 
-The examination focused on collecting memory captures, registry hives, and supporting forensic artifacts while maintaining evidentiary integrity through cryptographic hash verification. The project follows industry-standard forensic methodologies designed to preserve evidence for future analysis and reporting.
+The project demonstrates digital forensics and incident response (DFIR) techniques commonly used to preserve volatile evidence before system shutdown. Proper collection and validation procedures help ensure evidence remains reliable for future forensic analysis and investigative reporting.
 
-⸻
+Investigation Focus
 
-Objectives
+* Acquisition of volatile Windows memory
+* Collection of SAM and SYSTEM registry hives
+* Evidence preservation and documentation
+* Cryptographic hash validation
+* Integrity verification of acquired artifacts
+* Live-response forensic methodology
 
-* Acquire volatile memory from a live Windows system
-* Collect critical Windows registry hives
-* Preserve forensic artifacts in a controlled environment
-* Generate and validate cryptographic hashes
-* Verify evidence integrity throughout the acquisition process
-* Document forensic procedures and findings
-
-⸻
-
-Skills Demonstrated
-
-Digital Forensics
-
-* Live Response Collection
-* Volatile Memory Acquisition
-* Registry Hive Collection
-* Evidence Preservation
-* Forensic Documentation
-* Artifact Validation
-
-Security Operations
-
-* Incident Response Preparation
-* Evidence Handling Procedures
-* Chain of Custody Concepts
-* Integrity Verification
-
-Technical Skills
-
-* PowerShell
-* Windows Registry Analysis
-* File Hashing
-* Evidence Management
-* Data Validation
-
-⸻
-
-Tools Used
+Tools and Techniques
 
 * Windows PowerShell
+* Windows Registry Analysis
+* MD5 and SHA-1 Hash Verification
+* Evidence Integrity Validation
+* Forensic Artifact Preservation
 * OpenOffice Calc
-* Windows Registry
-* Cryptographic Hash Functions (MD5, SHA-1)
-* Windows Forensic Workstation Environment
-
-⸻
-
-Evidence Collected
-
-The following forensic artifacts were acquired during the examination:
-
-* Windows memory image (.mem)
-* SAM registry hive
-* SYSTEM registry hive
-* Hash validation reports
-* Generated hash lists
-* Acquisition logs
-
-⸻
-
-Project Documentation
-
-Document	Description
-Executive-Summary.md	High-level investigation summary
-Evidence.md	Evidence collection and validation screenshots
-Analysis.md	Technical analysis of acquired artifacts
-Findings.md	Key forensic findings and conclusions
-Recommendations.md	Best practices and future actions
-
-⸻
 
 Key Findings
 
-* Volatile memory was successfully acquired from a live Windows system.
+* A complete memory image was successfully acquired from a live Windows system.
 * Critical registry hives were preserved for future forensic analysis.
-* Cryptographic hash validation confirmed evidence integrity.
-* Acquired artifacts remained unchanged throughout collection and verification processes.
-* Evidence was stored in a controlled forensic environment.
+* Cryptographic hash validation confirmed artifact integrity.
+* Evidence remained unchanged throughout acquisition and validation activities.
+* No integrity issues or acquisition errors were identified.
 
-⸻
+Security Relevance
 
-Security Impact
+Volatile memory frequently contains evidence that is lost when a system is powered down, including running processes, active network connections, loaded modules, and user activity artifacts. Preserving this information is a critical component of incident response and forensic investigations.
 
-Volatile memory frequently contains valuable investigative artifacts that are lost when a system is powered down. Proper acquisition and validation procedures help preserve evidence that may support incident response, malware investigations, insider threat investigations, and legal proceedings.
+This project demonstrates forensic acquisition procedures used to support malware investigations, incident response operations, insider threat investigations, and evidence preservation efforts.
 
-⸻
+Documentation
+
+* Executive-Summary.md
+* Evidence.md
+* Analysis.md
+* Findings.md
+* Recommendations.md
