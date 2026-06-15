@@ -19,10 +19,10 @@ Cryptographic hashes were generated for acquired artifacts to verify forensic in
 
 Hash comparison results demonstrated that collected artifacts remained unchanged following acquisition and storage.
 
-![PowerShell hash comparison results](Assets/screenshots/lab1-powershell-hash-validation-results.png)
+![PowerShell hash comparison results](Assets/screenshots/powershell-hash-validation-results.png)
 
 ## Hash Inventory Review
 
 Generated hash inventories were reviewed using OpenOffice Calc to validate completeness and document artifact-level integrity information. MD5 and SHA-1 hashes were recorded for each acquired artifact to support future verification and chain-of-custody requirements.
 
-![Hash inventory review](Assets/screenshots/lab1-hash-list-review-openoffice-calc.png)
+![Hash inventory review](Assets/screenshots/hash-list-review-openoffice-calc.png)
